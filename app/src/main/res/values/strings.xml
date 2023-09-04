@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Comparator app</string>
+    <string name="result">¡Enter your words below!</string>
+    <string name="firstWord">Enter your first word</string>
+    <string name="secondWord">Enter your second word</string>
+    <string name="help">Help</string>
+    <string name="buttonComparator">Compare</string>
+    <string name="resultPositive">¡both words are the same!</string>
+    <string name="resultNegative">¡both words are unequal!</string>
+    <string name="toast">¡Comparison made successfully!</string>
+</resources>

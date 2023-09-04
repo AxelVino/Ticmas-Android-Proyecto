@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:fitsSystemWindows="true"
+    tools:context=".view.MainActivity" >
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/roundtexview"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComparator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/result"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="text"
+        android:autofillHints="name"
+        android:id="@+id/firstword"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundeditext"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:hint="@string/firstWord"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultLayout"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/secondword"
+        />
+
+    <EditText
+        android:inputType="text"
+        android:autofillHints="name"
+        android:id="@+id/secondword"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundeditext"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:hint="@string/secondWord"
+        android:textSize="15sp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultLayout"
+        app:layout_constraintStart_toEndOf="@id/firstword"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:id="@+id/buttonComparator"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/lightbluegradient"
+        android:textSize="15sp"
+        android:text="@string/buttonComparator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+
+    <ImageButton
+
+        android:id="@+id/buttonHelp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundbuttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstword"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        android:contentDescription="@string/help" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
